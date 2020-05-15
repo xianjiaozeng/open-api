@@ -1,0 +1,926 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>创建工单 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-chapter-fold/chapter-fold.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../开放接口/工单分类.html" />
+    
+    
+    <link rel="prev" href="../开放接口/跟踪发票状态.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.7.1"
+        data-chapter-title="创建工单"
+        data-filepath="开放接口/创建工单.md"
+        data-basepath=".."
+        data-revision="Wed Apr 01 2020 11:15:46 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 概述</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="概述/接入说明.html">
+            
+                
+                    <a href="../概述/接入说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        接入说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="概述/测试说明.html">
+            
+                
+                    <a href="../概述/测试说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        测试说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="概述/错误码.html">
+            
+                
+                    <a href="../概述/错误码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        错误码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="概述/城市编码.html">
+            
+                
+                    <a href="../概述/城市编码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        城市编码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="概述/订单状态及事件类型.html">
+            
+                
+                    <a href="../概述/订单状态及事件类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        订单状态及事件类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="概述/客服工单状态及事件类型.html">
+            
+                
+                    <a href="../概述/客服工单状态及事件类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        客服工单状态及事件类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="概述/验签算法.html">
+            
+                
+                    <a href="../概述/验签算法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        验签算法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 基础信息</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="基础信息/城市查询.html">
+            
+                
+                    <a href="../基础信息/城市查询.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        城市查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="基础信息/产品类型.html">
+            
+                
+                    <a href="../基础信息/产品类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        产品类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="基础信息/附近司机查询.html">
+            
+                
+                    <a href="../基础信息/附近司机查询.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        附近司机查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="基础信息/查询订单轨迹.html">
+            
+                
+                    <a href="../基础信息/查询订单轨迹.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        查询订单轨迹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="基础信息/查询司机实时位置.html">
+            
+                
+                    <a href="../基础信息/查询司机实时位置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        查询司机实时位置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 开放接口</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+            <span><b>3.1.</b> 计费</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="开放接口/计费规则.html">
+            
+                
+                    <a href="../开放接口/计费规则.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        计费规则
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="开放接口/获取预估价.html">
+            
+                
+                    <a href="../开放接口/获取预估价.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        获取预估价
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+            <span><b>3.2.</b> 订单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="开放接口/下单叫车.html">
+            
+                
+                    <a href="../开放接口/下单叫车.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        下单叫车
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="开放接口/订单事件通知.html">
+            
+                
+                    <a href="../开放接口/订单事件通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        订单事件通知
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="开放接口/查询订单详情.html">
+            
+                
+                    <a href="../开放接口/查询订单详情.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.3.</b>
+                        
+                        查询订单详情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="开放接口/修改目的地.html">
+            
+                
+                    <a href="../开放接口/修改目的地.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.4.</b>
+                        
+                        修改目的地
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="开放接口/根据三方订单号查询美团订单号.html">
+            
+                
+                    <a href="../开放接口/根据三方订单号查询美团订单号.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.5.</b>
+                        
+                        根据三方订单号查询美团订单号
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="开放接口/查询订单取消原因.html">
+            
+                
+                    <a href="../开放接口/查询订单取消原因.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.6.</b>
+                        
+                        查询订单取消原因
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="开放接口/订单取消规则.html">
+            
+                
+                    <a href="../开放接口/订单取消规则.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.7.</b>
+                        
+                        订单取消规则
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="开放接口/取消订单.html">
+            
+                
+                    <a href="../开放接口/取消订单.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.8.</b>
+                        
+                        取消订单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+            <span><b>3.3.</b> 支付</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="开放接口/支付回调通知.html">
+            
+                
+                    <a href="../开放接口/支付回调通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.1.</b>
+                        
+                        支付回调通知
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+            <span><b>3.4.</b> 退款</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="开放接口/退款回调通知.html">
+            
+                
+                    <a href="../开放接口/退款回调通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        退款回调通知
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+            <span><b>3.5.</b> 评价</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="开放接口/司机评价.html">
+            
+                
+                    <a href="../开放接口/司机评价.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        司机评价
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="开放接口/查询司机评分.html">
+            
+                
+                    <a href="../开放接口/查询司机评分.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        查询司机评分(星级)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="开放接口/查询订单评价详情.html">
+            
+                
+                    <a href="../开放接口/查询订单评价详情.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.3.</b>
+                        
+                        查询订单评价详情
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+            <span><b>3.6.</b> 发票</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="开放接口/申请开发票.html">
+            
+                
+                    <a href="../开放接口/申请开发票.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        申请开发票
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="开放接口/跟踪发票状态.html">
+            
+                
+                    <a href="../开放接口/跟踪发票状态.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        跟踪发票状态
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+            <span><b>3.7.</b> 客服工单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.7.1" data-path="开放接口/创建工单.html">
+            
+                
+                    <a href="../开放接口/创建工单.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        创建工单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="开放接口/工单分类.html">
+            
+                
+                    <a href="../开放接口/工单分类.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        工单分类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="开放接口/工单回调.html">
+            
+                
+                    <a href="../开放接口/工单回调.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.3.</b>
+                        
+                        工单回调
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="开放接口/查询工单进度.html">
+            
+                
+                    <a href="../开放接口/查询工单进度.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.4.</b>
+                        
+                        查询工单进度
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="附录.html">
+            
+                
+                    <a href="../附录.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x521B;&#x5EFA;&#x5DE5;&#x5355;"><del>&#x521B;&#x5EFA;&#x5DE5;&#x5355;</del></h1>
+<p><strong>1. &#x529F;&#x80FD;&#x8BF4;&#x660E;</strong></p>
+<p>&#x521B;&#x5EFA;&#x5DE5;&#x5355;</p>
+<p><strong>2. &#x8BF7;&#x6C42;&#x5730;&#x5740;</strong></p>
+<p><a href="https://${domain}/{customer}/{orderSource}/cs/createWorkCase" target="_blank">https://${domain}/{customer}/{orderSource}/cs/createWorkCase</a></p>
+<p><strong>3. &#x670D;&#x52A1;&#x534F;&#x8BAE;</strong></p>
+<p>HTTP POST</p>
+<p><strong>4. &#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</th>
+<th>&#x53C2;&#x6570;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">appKey</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x4EE4;&#x724C;</td>
+</tr>
+<tr>
+<td style="text-align:left">appSecret</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x6570;&#x5B57;&#x7B7E;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">timestamp</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>Long</td>
+<td>&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td style="text-align:left">orderId</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x7F8E;&#x56E2;&#x8FD0;&#x5355;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">partnerOrderNo</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x8FD0;&#x529B;&#x5546;&#x8BA2;&#x5355;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">reason</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x6295;&#x8BC9;&#x539F;&#x56E0;</td>
+</tr>
+<tr>
+<td style="text-align:left">passengerPhone</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x4E58;&#x5BA2;&#x6295;&#x8BC9;&#x624B;&#x673A;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">categoryCode</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>Integer</td>
+<td>&#x5DE5;&#x5355;&#x5206;&#x7C7B;&#x7801;&#xFF0C;&#x5DE5;&#x5355;&#x5206;&#x7C7B;&#x63A5;&#x53E3;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td style="text-align:left">outWorkCaseId</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x8FD0;&#x529B;&#x5546;&#x5DE5;&#x5355;&#x53F7;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. &#x8FD4;&#x56DE;&#x503C;</strong></p>
+<pre><code class="lang-json">{
+    &quot;code&quot;: 200,
+    &quot;success&quot;: true,
+    &quot;msg&quot;: &quot;&#x6210;&#x529F;&quot;,
+    &quot;traceId&quot;: 5857893724238462783,
+    &quot;data&quot;: &quot;{
+        &quot;workCaseId&quot;: 213182457623865788718
+    }&quot;
+}
+</code></pre>
+<p><strong>6.&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong></p>
+<p>success&#x4E3A;true&#x8868;&#x793A;&#x521B;&#x5EFA;&#x5DE5;&#x5355;&#x6210;&#x529F;&#xFF0C;workCaseId&#x6807;&#x8BC6;&#x7F8E;&#x56E2;&#x5DE5;&#x5355;ID</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>workCaseId</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>Integer</td>
+<td>&#x7F8E;&#x56E2;&#x5DE5;&#x5355;ID</td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../开放接口/跟踪发票状态.html" class="navigation navigation-prev " aria-label="Previous page: 跟踪发票状态"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../开放接口/工单分类.html" class="navigation navigation-next " aria-label="Next page: 工单分类"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"chapter-fold":{},"expandable-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

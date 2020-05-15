@@ -1,0 +1,1767 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>查询订单详情 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-chapter-fold/chapter-fold.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../开放接口/修改目的地.html" />
+    
+    
+    <link rel="prev" href="../开放接口/订单事件通知.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.2.3"
+        data-chapter-title="查询订单详情"
+        data-filepath="开放接口/查询订单详情.md"
+        data-basepath=".."
+        data-revision="Wed Apr 01 2020 11:15:46 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 概述</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="概述/接入说明.html">
+            
+                
+                    <a href="../概述/接入说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        接入说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="概述/测试说明.html">
+            
+                
+                    <a href="../概述/测试说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        测试说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="概述/错误码.html">
+            
+                
+                    <a href="../概述/错误码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        错误码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="概述/城市编码.html">
+            
+                
+                    <a href="../概述/城市编码.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        城市编码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="概述/订单状态及事件类型.html">
+            
+                
+                    <a href="../概述/订单状态及事件类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        订单状态及事件类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="概述/客服工单状态及事件类型.html">
+            
+                
+                    <a href="../概述/客服工单状态及事件类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        客服工单状态及事件类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="概述/验签算法.html">
+            
+                
+                    <a href="../概述/验签算法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        验签算法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 基础信息</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="基础信息/城市查询.html">
+            
+                
+                    <a href="../基础信息/城市查询.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        城市查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="基础信息/产品类型.html">
+            
+                
+                    <a href="../基础信息/产品类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        产品类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="基础信息/附近司机查询.html">
+            
+                
+                    <a href="../基础信息/附近司机查询.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        附近司机查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="基础信息/查询订单轨迹.html">
+            
+                
+                    <a href="../基础信息/查询订单轨迹.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        查询订单轨迹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="基础信息/查询司机实时位置.html">
+            
+                
+                    <a href="../基础信息/查询司机实时位置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        查询司机实时位置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 开放接口</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+            <span><b>3.1.</b> 计费</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="开放接口/计费规则.html">
+            
+                
+                    <a href="../开放接口/计费规则.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        计费规则
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="开放接口/获取预估价.html">
+            
+                
+                    <a href="../开放接口/获取预估价.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        获取预估价
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+            <span><b>3.2.</b> 订单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="开放接口/下单叫车.html">
+            
+                
+                    <a href="../开放接口/下单叫车.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        下单叫车
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="开放接口/订单事件通知.html">
+            
+                
+                    <a href="../开放接口/订单事件通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        订单事件通知
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2.3" data-path="开放接口/查询订单详情.html">
+            
+                
+                    <a href="../开放接口/查询订单详情.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.3.</b>
+                        
+                        查询订单详情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="开放接口/修改目的地.html">
+            
+                
+                    <a href="../开放接口/修改目的地.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.4.</b>
+                        
+                        修改目的地
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="开放接口/根据三方订单号查询美团订单号.html">
+            
+                
+                    <a href="../开放接口/根据三方订单号查询美团订单号.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.5.</b>
+                        
+                        根据三方订单号查询美团订单号
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="开放接口/查询订单取消原因.html">
+            
+                
+                    <a href="../开放接口/查询订单取消原因.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.6.</b>
+                        
+                        查询订单取消原因
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="开放接口/订单取消规则.html">
+            
+                
+                    <a href="../开放接口/订单取消规则.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.7.</b>
+                        
+                        订单取消规则
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="开放接口/取消订单.html">
+            
+                
+                    <a href="../开放接口/取消订单.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.8.</b>
+                        
+                        取消订单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+            <span><b>3.3.</b> 支付</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="开放接口/支付回调通知.html">
+            
+                
+                    <a href="../开放接口/支付回调通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.1.</b>
+                        
+                        支付回调通知
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+            <span><b>3.4.</b> 退款</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="开放接口/退款回调通知.html">
+            
+                
+                    <a href="../开放接口/退款回调通知.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                        退款回调通知
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+            <span><b>3.5.</b> 评价</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="开放接口/司机评价.html">
+            
+                
+                    <a href="../开放接口/司机评价.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        司机评价
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="开放接口/查询司机评分.html">
+            
+                
+                    <a href="../开放接口/查询司机评分.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        查询司机评分(星级)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="开放接口/查询订单评价详情.html">
+            
+                
+                    <a href="../开放接口/查询订单评价详情.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.3.</b>
+                        
+                        查询订单评价详情
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+            <span><b>3.6.</b> 发票</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="开放接口/申请开发票.html">
+            
+                
+                    <a href="../开放接口/申请开发票.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        申请开发票
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="开放接口/跟踪发票状态.html">
+            
+                
+                    <a href="../开放接口/跟踪发票状态.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        跟踪发票状态
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+            <span><b>3.7.</b> 客服工单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="开放接口/创建工单.html">
+            
+                
+                    <a href="../开放接口/创建工单.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        创建工单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="开放接口/工单分类.html">
+            
+                
+                    <a href="../开放接口/工单分类.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        工单分类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="开放接口/工单回调.html">
+            
+                
+                    <a href="../开放接口/工单回调.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.3.</b>
+                        
+                        工单回调
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="开放接口/查询工单进度.html">
+            
+                
+                    <a href="../开放接口/查询工单进度.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.4.</b>
+                        
+                        查询工单进度
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="附录.html">
+            
+                
+                    <a href="../附录.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x67E5;&#x8BE2;&#x8BA2;&#x5355;&#x8BE6;&#x60C5;">&#x67E5;&#x8BE2;&#x8BA2;&#x5355;&#x8BE6;&#x60C5;</h1>
+<p><strong>1. &#x529F;&#x80FD;&#x8BF4;&#x660E;</strong></p>
+<p>&#x83B7;&#x53D6;&#x8BA2;&#x5355;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4F5C;&#x4E3A;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x56DE;&#x8C03;&#x5931;&#x8D25;&#x540E;&#x7684;&#x8865;&#x507F;&#xFF0C;&#x4FDD;&#x8BC1;&#x53CC;&#x65B9;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x4E00;&#x81F4;</p>
+<p><strong>2. &#x8BF7;&#x6C42;&#x5730;&#x5740;</strong></p>
+<p><a href="https://${domain}/{customer}/{orderSource}/order/orderDetail" target="_blank">https://${domain}/{customer}/{orderSource}/order/orderDetail</a></p>
+<p><strong>3. &#x670D;&#x52A1;&#x534F;&#x8BAE;</strong></p>
+<p>HTTP POST</p>
+<p><strong>4. &#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</th>
+<th>&#x53C2;&#x6570;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">appKey</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x4EE4;&#x724C;</td>
+</tr>
+<tr>
+<td style="text-align:left">appSecret</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x6570;&#x5B57;&#x7B7E;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">timestamp</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>Long</td>
+<td>&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td style="text-align:left">orderId</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x8FD0;&#x5355;id</td>
+</tr>
+<tr>
+<td style="text-align:left">partnerOrderNo</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>String</td>
+<td>&#x6D41;&#x91CF;&#x5E73;&#x53F0;/&#x5546;&#x8BA2;&#x5355;&#x53F7;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. &#x8FD4;&#x56DE;&#x7ED3;&#x679C;</strong></p>
+<pre><code class="lang-json">{
+    &quot;code&quot;: 200,
+    &quot;success&quot;: true,
+    &quot;msg&quot;: &quot;&#x6210;&#x529F;&quot;,
+    &quot;traceId&quot;: 5857893724238462783,
+    &quot;data&quot;: &quot;{
+        &quot;passengerPhone&quot;: &quot;15011290001&quot;,
+        &quot;passengerName&quot;: &quot;zhangsan&quot;,
+        &quot;partnerOrderNo&quot;: &quot;11000012656&quot;,
+        &quot;orderStatus&quot;: &quot;REACHED&quot;,
+        &quot;orderId&quot;: &quot;12126483589807063817618&quot;,
+        &quot;orderSource&quot;: 4,
+        &quot;departureTime&quot;: 1566902560000,
+        &quot;passengerLongitude&quot;: &quot;116.018083&quot;,
+        &quot;passengerLatitude&quot;: &quot;39.68943&quot;,
+        &quot;departureAddress&quot;: &quot;&#x74DC;&#x5E02;&#x6751;&quot;,
+        &quot;departureLongitude&quot;: &quot;116.018083&quot;,
+        &quot;departureLatitude&quot;: &quot;39.68943&quot;,
+        &quot;destinationAddress&quot;: &quot;&#x56DE;&#x9F99;&#x89C2;[&#x5730;&#x94C1;&#x7AD9;]&quot;,
+        &quot;destinationLongitude&quot;: &quot;116.336267&quot;,
+        &quot;destinationLatitude&quot;: &quot;40.070786&quot;,
+        &quot;cityId&quot;: 1000000001,
+        &quot;thanksPrice&quot;: 10,
+        &quot;customerId&quot;: 100000,
+        &quot;productOrderNo&quot;: &quot;12126483589807063817618_479&quot;,
+        &quot;productId&quot;: 479,
+        &quot;longDispatchFee&quot;: 0,
+        &quot;isOnDriverWay&quot;: false,
+        &quot;driverId&quot;: 5017344401,
+        &quot;carLevelId&quot;: 2,
+        &quot;productServiceId&quot;: 1,
+        &quot;familyName&quot;: &quot;&#x5F20;&quot;,
+        &quot;driverName&quot;: &quot;&#x5F20;&#x4E09;&quot;,
+        &quot;driverPhone&quot;: &quot;18511162048&quot;,
+        &quot;carNumber&quot;: &quot;&#x4EAC;Z62047&quot;,
+        &quot;productLineId&quot;: 1,
+        &quot;brandName&quot;: &quot;&#x5B9D;&#x9A6C;&quot;,
+        &quot;color&quot;: &quot;&#x9ED1;&#x8272;&quot;,
+        &quot;carId&quot;: 4013643,
+        &quot;realStartTripTime&quot;: 1566902560000,
+        &quot;realEndTripTime&quot;: 1566902562000,
+        &quot;realDepartureAddress&quot;: &quot;&#x74DC;&#x5E02;&#x6751;&quot;,
+        &quot;realDepartureLongitude&quot;: &quot;116.018083&quot;,
+        &quot;realDepartureLatitude&quot;: &quot;39.68943&quot;,
+        &quot;isChangeDestination&quot;: true,
+        &quot;suspectStatus&quot;: 0,
+        &quot;shouldPayPrice&quot;: 7000,
+        &quot;trailTotalPrice&quot;: 5000,
+        &quot;minPrice&quot;: 5000,
+        &quot;startPrice&quot;: 0,
+        &quot;timePrice&quot;: 0,
+        &quot;distancePrice&quot;: 0,
+        &quot;returnPrice&quot;: 0,
+        &quot;highwayPrice&quot;: 0,
+        &quot;longDistancePrice&quot;: 0,
+        &quot;tollPrice&quot;: 0,
+        &quot;parkPrice&quot;: 1000,
+        &quot;otherPrice&quot;: 1000,
+        &quot;nightPrice&quot;: 0,
+        &quot;lowSpeedPrice&quot;: 0,
+        &quot;priceDetail&quot;: &quot;&quot;,
+        &quot;comment&quot;: &quot;&#x53F8;&#x673A;&#x9A7E;&#x9A76;&#x5E73;&#x7A33;&quot;,
+        &quot;score&quot;: 5,
+        &quot;cancelFee&quot;: 10,
+        &quot;cancelFeePayStatus&quot;: 65,
+        &quot;cancelCode&quot;: 10,
+        &quot;cancelReason&quot;: &quot;&#x6211;&#x884C;&#x7A0B;&#x6709;&#x53D8;&#xFF0C;&#x6682;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x8F66;&quot;,
+        &quot;cancelTime&quot;: 1565676222000,
+        &quot;cancelPricePayTime&quot;: 1565676225000,
+        &quot;refundAmount&quot;: 5,
+        &quot;refundTime&quot;: 1565171230944,
+        &quot;refundStatus&quot;: 10
+    }&quot;
+}
+</code></pre>
+<p><strong>6.&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong></p>
+<p>&#x968F;&#x8BA2;&#x5355;&#x4E8B;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x589E;&#x591A;&#xFF0C;&#x8BE6;&#x7EC6;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>orderEvent = 5&#x3001;10 &#x3001;20</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>passengerPhone</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x624B;&#x673A;&#x53F7;</td>
+</tr>
+<tr>
+<td>passengerName</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x4E58;&#x5BA2;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>partnerOrderNo</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x6D41;&#x91CF;&#x5E73;&#x53F0;/&#x5546;&#x8BA2;&#x5355;&#x53F7;</td>
+</tr>
+<tr>
+<td>orderStatus</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x8BA2;&#x5355;&#x72B6;&#x6001;&#xFF0C;&#x8BE6;&#x89C1;&#x6982;&#x8FF0;&#xFF1A;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x53CA;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x7F8E;&#x56E2;&#x8BA2;&#x5355;ID</td>
+</tr>
+<tr>
+<td>orderSource</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x8BA2;&#x5355;&#x6765;&#x6E90;&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x8BA2;&#x5355;&#x6765;&#x6E90;</td>
+</tr>
+<tr>
+<td>departureTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x53EB;&#x8F66;&#x51FA;&#x53D1;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>passengerLongitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x4E0B;&#x5355;&#x65F6;&#x6240;&#x5728;&#x7ECF;&#x5EA6;</td>
+</tr>
+<tr>
+<td>passengerLatitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x4E0B;&#x5355;&#x65F6;&#x6240;&#x5728;&#x7EAC;&#x5EA6;</td>
+</tr>
+<tr>
+<td>destinationLongitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x76EE;&#x7684;&#x5730;&#x7ECF;&#x5EA6;</td>
+</tr>
+<tr>
+<td>destinationLatitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x76EE;&#x7684;&#x5730;&#x7EAC;&#x5EA6;</td>
+</tr>
+<tr>
+<td>destinationAddress</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x76EE;&#x7684;&#x5730;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>departureLongitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E0B;&#x5355;&#x5730;&#x5740;&#x7ECF;&#x5EA6;</td>
+</tr>
+<tr>
+<td>departureLatitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E0B;&#x5355;&#x5730;&#x5740;&#x7EAC;&#x5EA6;</td>
+</tr>
+<tr>
+<td>departureAddress</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E0B;&#x5355;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>cityId</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x57CE;&#x5E02;ID</td>
+</tr>
+<tr>
+<td>thanksPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x611F;&#x8C22;&#x8D39;</td>
+</tr>
+<tr>
+<td>customerId</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x5546;ID</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 15 , 25, 30</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>productOrderNo</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x8C03;&#x5EA6;&#x9009;&#x62E9;&#x7684;&#x4EA7;&#x54C1;&#x5206;&#x5355;ID</td>
+</tr>
+<tr>
+<td>productId</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x8C03;&#x5EA6;&#x9009;&#x62E9;&#x7684;&#x4EA7;&#x54C1;id</td>
+</tr>
+<tr>
+<td>longDispatchFee</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x8C03;&#x5EA6;&#x8D39;</td>
+</tr>
+<tr>
+<td>isOnDriverWay</td>
+<td>Boolean</td>
+<td>&#x5426;</td>
+<td>&#x662F;&#x5426;&#x987A;&#x8DEF;&#x5355;</td>
+</tr>
+<tr>
+<td>driverId</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x53F8;&#x673A;id</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 40&#xFF0C;45&#xFF0C;50</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carLevelId</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8F66;&#x578B;ID&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x8F66;&#x578B;</td>
+</tr>
+<tr>
+<td>productServiceId</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x573A;&#x666F;ID&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x573A;&#x666F;</td>
+</tr>
+<tr>
+<td>familyName</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53F8;&#x673A;&#x59D3;</td>
+</tr>
+<tr>
+<td>driverName</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53F8;&#x673A;&#x540D;&#x5B57;</td>
+</tr>
+<tr>
+<td>driverPhone</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53F8;&#x673A;&#x7535;&#x8BDD;</td>
+</tr>
+<tr>
+<td>carNumber</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x8F66;&#x724C;&#x53F7;</td>
+</tr>
+<tr>
+<td>productLineId</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4EA7;&#x54C1;&#x7EBF;ID&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x4EA7;&#x54C1;&#x7EBF;</td>
+</tr>
+<tr>
+<td>brandName</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x8F66;&#x54C1;&#x724C;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>color</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x8F66;&#x8F86;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td>carId</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x8F66;id</td>
+</tr>
+<tr>
+<td>companyName</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x53F8;&#x673A;&#x6240;&#x5C5E;&#x79DF;&#x8D41;&#x516C;&#x53F8;&#x540D;&#x79F0;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 55</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>realDepartureAddress</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x5B9E;&#x9645;&#x4E0A;&#x8F66;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td>realDepartureLongitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x5B9E;&#x9645;&#x4E0A;&#x8F66;&#x5730;&#x70B9;&#x7ECF;&#x5EA6;</td>
+</tr>
+<tr>
+<td>realDepartureLatitude</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x5B9E;&#x9645;&#x4E0A;&#x8F66;&#x5730;&#x70B9;&#x7EAC;&#x5EA6;</td>
+</tr>
+<tr>
+<td>realStartTripTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x5B9E;&#x9645;&#x51FA;&#x53D1;&#x65F6;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 60 </p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>realEndTripTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x5B9E;&#x9645;&#x5230;&#x8FBE;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>isChangeDestination</td>
+<td>Boolean</td>
+<td>&#x662F;</td>
+<td>&#x662F;&#x5426;&#x66F4;&#x6539;&#x8FC7;&#x76EE;&#x7684;&#x5730;</td>
+</tr>
+<tr>
+<td>suspectStatus</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8BA2;&#x5355;&#x5F02;&#x5E38;&#x72B6;&#x6001;&#xFF0C;&#x8BE6;&#x89C1;&#x6982;&#x8FF0;&#xFF1A;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x53CA;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B; - &#x8BA2;&#x5355;&#x5F02;&#x5E38;&#x72B6;&#x6001;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 65 &#xFF0C;70</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shouldPayPrice</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x4E58;&#x5BA2;&#x5E94;&#x4ED8;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>trailTotalPrice</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x884C;&#x7A0B;&#x603B;&#x8D39;&#x7528;(&#x4E0D;&#x7B97;&#x9644;&#x52A0;&#x8D39;)</td>
+</tr>
+<tr>
+<td>minPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6700;&#x4F4E;&#x6D88;&#x8D39;</td>
+</tr>
+<tr>
+<td>startPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8D77;&#x6B65;&#x4EF7;</td>
+</tr>
+<tr>
+<td>timePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x65F6;&#x957F;&#x8D39;</td>
+</tr>
+<tr>
+<td>distancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x91CC;&#x7A0B;&#x8D39;</td>
+</tr>
+<tr>
+<td>returnPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FD4;&#x7A7A;&#x8D39;</td>
+</tr>
+<tr>
+<td>highwayPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x9AD8;&#x901F;&#x8D39;</td>
+</tr>
+<tr>
+<td>longDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x8D39;</td>
+</tr>
+<tr>
+<td>tollPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x901A;&#x884C;&#x8D39;</td>
+</tr>
+<tr>
+<td>parkPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x505C;&#x8F66;&#x8D39;</td>
+</tr>
+<tr>
+<td>otherPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x5176;&#x5B83;&#x8D39;</td>
+</tr>
+<tr>
+<td>nightPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x591C;&#x95F4;&#x8D39;</td>
+</tr>
+<tr>
+<td>lowSpeedPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4F4E;&#x901F;&#x8D39;</td>
+</tr>
+<tr>
+<td>priceDetail</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x7A0B;&#x8D39;&#x7528;&#x660E;&#x7EC6;(&#x89C1;&#x4E0B;&#x65B9;&#x8868;&#x683C;)</td>
+</tr>
+</tbody>
+</table>
+<p>priceDetail&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>productId</td>
+<td>Long</td>
+<td>&#x5426;</td>
+<td>&#x4EA7;&#x54C1;ID</td>
+</tr>
+<tr>
+<td>estimateId</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x4F30;ID</td>
+</tr>
+<tr>
+<td>trailPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x7A0B;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>trailTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x9A76;&#x603B;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>trailDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x9A76;&#x603B;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>minPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6700;&#x4F4E;&#x6D88;&#x8D39;</td>
+</tr>
+<tr>
+<td>startPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8D77;&#x6B65;&#x4EF7;</td>
+</tr>
+<tr>
+<td>startDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8D77;&#x6B65;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8D77;&#x6B65;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>distancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x91CC;&#x7A0B;&#x8D39;</td>
+</tr>
+<tr>
+<td>normalDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6B63;&#x5E38;&#x65F6;&#x6BB5;&#x884C;&#x9A76;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>normalDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6B63;&#x5E38;&#x65F6;&#x6BB5;&#x91CC;&#x7A0B;&#x8D39;</td>
+</tr>
+<tr>
+<td>periodDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x7279;&#x6B8A;&#x65F6;&#x6BB5;&#x884C;&#x9A76;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>periodDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x7279;&#x6B8A;&#x65F6;&#x6BB5;&#x91CC;&#x7A0B;&#x8D39;</td>
+</tr>
+<tr>
+<td>timePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x65F6;&#x957F;&#x8D39;</td>
+</tr>
+<tr>
+<td>normalTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6B63;&#x5E38;&#x65F6;&#x6BB5;&#x884C;&#x9A76;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>normalTimePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x6B63;&#x5E38;&#x65F6;&#x6BB5;&#x65F6;&#x957F;&#x8D39;</td>
+</tr>
+<tr>
+<td>periodTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x7279;&#x6B8A;&#x65F6;&#x6BB5;&#x884C;&#x9A76;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>periodTimePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x7279;&#x6B8A;&#x65F6;&#x6BB5;&#x65F6;&#x957F;&#x8D39;</td>
+</tr>
+<tr>
+<td>longDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>longDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x8D39;</td>
+</tr>
+<tr>
+<td>returnDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FD4;&#x7A7A;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>returnDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FD4;&#x7A7A;&#x8D39;</td>
+</tr>
+<tr>
+<td>nightPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x591C;&#x95F4;&#x8D39;</td>
+</tr>
+<tr>
+<td>nightDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x591C;&#x95F4;&#x884C;&#x9A76;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>lowSpeedPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4F4E;&#x901F;&#x8D39;</td>
+</tr>
+<tr>
+<td>lowSpeedTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4F4E;&#x901F;&#x884C;&#x9A76;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>estimateTolls</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x4F30;&#x9AD8;&#x901F;&#x8D39;</td>
+</tr>
+<tr>
+<td>periodPriceDTOList</td>
+<td>Array</td>
+<td>&#x5426;</td>
+<td>&#x5206;&#x65F6;&#x6BB5;&#x8BE6;&#x60C5;(&#x89C1;&#x4E0B;&#x65B9;&#x8868;&#x683C;)</td>
+</tr>
+</tbody>
+</table>
+<p>periodPriceDTOList[].PeriodPriceDTO:</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>period</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x89C4;&#x5219;&#x914D;&#x7F6E;&#x7684;&#x65F6;&#x95F4;&#x6BB5;</td>
+</tr>
+<tr>
+<td>trailPeriod</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x5B9E;&#x9645;&#x884C;&#x9A76;&#x7684;&#x65F6;&#x95F4;&#x6BB5;</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x65F6;&#x6BB5;&#x5185;&#x8D39;&#x7528;&#x603B;&#x4EF7;</td>
+</tr>
+<tr>
+<td>timePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x65F6;&#x957F;&#x8D39;</td>
+</tr>
+<tr>
+<td>distancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x91CC;&#x7A0B;&#x8D39;</td>
+</tr>
+<tr>
+<td>travelTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x9A76;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>travelDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x884C;&#x9A76;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>longDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>longDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FDC;&#x9014;&#x8D39;</td>
+</tr>
+<tr>
+<td>returnDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FD4;&#x7A7A;&#x91CC;&#x7A0B;</td>
+</tr>
+<tr>
+<td>returnDistancePrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x8FD4;&#x7A7A;&#x8D39;</td>
+</tr>
+<tr>
+<td>lowSpeedPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4F4E;&#x901F;&#x8D39;</td>
+</tr>
+<tr>
+<td>lowSpeedTime</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x4F4E;&#x901F;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td>nightPrice</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x591C;&#x95F4;&#x8D39;</td>
+</tr>
+<tr>
+<td>nightDistance</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x591C;&#x95F4;&#x884C;&#x9A76;&#x8DDD;&#x79BB;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 75</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>comment</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x8BC4;&#x4EF7;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td>score</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x8BC4;&#x4EF7;&#x661F;&#x7EA7;&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x8BC4;&#x4EF7;&#x661F;&#x7EA7;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 80 &#xFF0C;85&#xFF0C;90&#xFF0C;95</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cancelFee</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x53D6;&#x6D88;&#x8D39;</td>
+</tr>
+<tr>
+<td>cancelFeePayStatus</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x53D6;&#x6D88;&#x8D39;&#x652F;&#x4ED8;&#x72B6;&#x6001;&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x6982;&#x8FF0;&#xFF1A;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x53CA;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>cancelCode</td>
+<td>Integer</td>
+<td>&#x5426;</td>
+<td>&#x53D6;&#x6D88;&#x7801;&#xFF0C;&#x8BE6;&#x89C1;&#x9644;&#x5F55;&#xFF1A;&#x53D6;&#x6D88;&#x539F;&#x56E0;&#x7F16;&#x7801;</td>
+</tr>
+<tr>
+<td>cancelReason</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53D6;&#x6D88;&#x539F;&#x56E0;</td>
+</tr>
+<tr>
+<td>cancelTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x53D6;&#x6D88;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>cancelPricePayTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x53D6;&#x6D88;&#x8D39;&#x652F;&#x4ED8;&#x65F6;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>orderEvent = 105</p>
+<p>&#x4EC5;&#x652F;&#x6301;&#x5168;&#x989D;&#x9000;&#x6B3E;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>refundAmount</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x9000;&#x6B3E;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td>refundTime</td>
+<td>Long</td>
+<td>&#x662F;</td>
+<td>&#x9000;&#x6B3E;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>refundStatus</td>
+<td>Integer</td>
+<td>&#x662F;</td>
+<td>&#x8BA2;&#x5355;&#x9000;&#x6B3E;&#x72B6;&#x6001;&#xFF0C;&#x8BE6;&#x89C1;&#x6982;&#x8FF0;&#xFF1A;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x53CA;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../开放接口/订单事件通知.html" class="navigation navigation-prev " aria-label="Previous page: 订单事件通知"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../开放接口/修改目的地.html" class="navigation navigation-next " aria-label="Next page: 修改目的地"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"chapter-fold":{},"expandable-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
